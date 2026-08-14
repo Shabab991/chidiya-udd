@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>चिड़िया उड़ | Chidiya Udd</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="sky">
+  <div class="cloud cloud--1"></div>
+  <div class="cloud cloud--2"></div>
+  <div class="cloud cloud--3"></div>
+  <div class="sun"></div>
+</div>
+
+<main class="stage">
+
+  <!-- START SCREEN -->
+  <section id="start-screen" class="screen">
+    <p class="eyebrow">एक पुराना आँगन का खेल</p>
+    <h1 class="title">चिड़िया <span class="title__accent">उड़</span></h1>
+    <p class="subtitle">नाम पुकारा जाएगा — अगर वो उड़ सकता है, तो जल्दी टैप करो!<br>अगर नहीं उड़ता... हाथ मत हिलाओ।</p>
+
+    <div class="rules-card">
+      <div class="rule">
+        <span class="rule__icon">🐦</span>
+        <span>उड़ने वाला दिखे → <strong>टैप करो</strong> या <kbd>Space</kbd> दबाओ</span>
+      </div>
+      <div class="rule">
+        <span class="rule__icon">🐘</span>
+        <span>ना उड़ने वाला दिखे → <strong>कुछ मत करो</strong></span>
+      </div>
+      <div class="rule">
+        <span class="rule__icon">⏳</span>
+        <span>हर सही जवाब पर खेल <strong>तेज़</strong> होता जाएगा</span>
+      </div>
+    </div>
+
+    <button id="start-btn" class="btn btn--primary">खेल शुरू करो</button>
+    <p class="high-score">सर्वश्रेष्ठ स्कोर: <span id="start-high-score">0</span></p>
+  </section>
+
+  <!-- GAME SCREEN -->
+  <section id="game-screen" class="screen screen--hidden">
+    <div class="hud">
+      <div class="hud__item hud__item--lives" id="lives">❤️❤️❤️</div>
+      <div class="hud__item hud__item--score">
+        <span class="hud__label">स्कोर</span>
+        <span id="score">0</span>
+      </div>
+      <div class="hud__item hud__item--streak" id="streak-badge">🔥 <span id="streak">0</span></div>
+    </div>
+
+    <div class="timer-track">
+      <div id="timer-fill" class="timer-track__fill"></div>
+    </div>
+
+    <div class="kite-zone">
+      <div id="kite-card" class="kite">
+        <div class="kite__tail"></div>
+        <div class="kite__inner">
+          <span id="word-emoji" class="kite__emoji">🐦</span>
+          <span id="word-text" class="kite__word">चिड़िया</span>
+        </div>
+      </div>
+      <div id="feedback-burst" class="feedback-burst"></div>
+    </div>
+
+    <button id="tap-btn" class="btn btn--tap">उड़! 🪁</button>
+    <p class="hint">या स्पेसबार दबाओ</p>
+  </section>
+
+  <!-- GAME OVER SCREEN -->
+  <section id="end-screen" class="screen screen--hidden">
+    <p class="eyebrow">खेल खत्म</p>
+    <h2 class="title title--small">बहुत खूब!</h2>
+    <div class="result-card">
+      <div class="result-row">
+        <span>आपका स्कोर</span>
+        <strong id="final-score">0</strong>
+      </div>
+      <div class="result-row">
+        <span>सर्वश्रेष्ठ स्कोर</span>
+        <strong id="final-high-score">0</strong>
+      </div>
+      <p id="new-record" class="new-record screen--hidden">🎉 नया रिकॉर्ड!</p>
+    </div>
+    <button id="restart-btn" class="btn btn--primary">फिर से खेलो</button>
+  </section>
+
+</main>
+
+<footer class="footer">Built by <strong>Shabab Ahmad</strong></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
