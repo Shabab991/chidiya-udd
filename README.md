@@ -1,126 +1,149 @@
 # 🐦 Chidiya Udd — Bird Fly
 
-A nostalgic Indian playground reflex game rebuilt for the web using pure HTML, CSS, and JavaScript.
+A nostalgic **Indian playground reflex game** rebuilt for the web using pure **HTML, CSS, and JavaScript**.
 
 The rule is simple:
 
-> 🐦 If it can fly → TAP!
->
-> 🐘 If it cannot fly → DON'T TAP!
+> 🐦 If it can fly → **TAP!**
+> 🐘 If it cannot fly → **DON'T TAP!**
 
-As you answer correctly, the game becomes faster and more challenging. Test your reaction speed, concentration, and ability to avoid impulsive clicks.
-
----
+As the player answers correctly, the game becomes faster and more challenging, testing **reaction speed, concentration, accuracy, and decision-making under time pressure**.
 
 ## 🎮 Live Demo
 
-🌐 **Play Chidiya Udd Online:**
+### 👉 [Play Chidiya Udd Online](https://shabab991.github.io/chidiya-udd/)
 
-https://shabab991.github.io/chidiya-udd/
+> No installation required — play directly in your browser.
+
+---
+
+## 🖥️ Application Preview
+
+<img width="1194" height="874" alt="Chidiya Udd Bird Fly Game" src="https://github.com/user-attachments/assets/74319cce-c00a-4672-8e91-105764c9f403" />
 
 ---
 
 ## 📖 About the Game
 
-**Chidiya Udd (चिड़िया उड़)** is a classic Indian playground reflex game recreated as an interactive browser game.
+**Chidiya Udd (चिड़िया उड़)** is a classic Indian playground reflex game recreated as an interactive browser experience.
 
-A word and emoji appear on the screen. The player has to decide whether the displayed object can fly.
+A word and emoji appear on the screen. The player must quickly decide whether the displayed object can fly.
 
-For example:
+### 🐦 Flying Objects
 
-- 🐦 चिड़िया → Fly → TAP
-- 🦜 तोता → Fly → TAP
-- 🐦‍⬛ कौआ → Fly → TAP
-- 🦉 उल्लू → Fly → TAP
-- 🦚 मोर → Fly → TAP
-- 🪁 पतंग → Fly → TAP
-- ✈️ हवाई जहाज़ → Fly → TAP
-- 🎈 गुब्बारा → Fly → TAP
-- 🐘 हाथी → Cannot fly → DON'T TAP
-- 🐄 गाय → Cannot fly → DON'T TAP
-- 🐐 बकरी → Cannot fly → DON'T TAP
-- 🪑 कुर्सी → Cannot fly → DON'T TAP
-- 🚲 साइकिल → Cannot fly → DON'T TAP
-- 🚗 कार → Cannot fly → DON'T TAP
-- 🐟 मछली → Cannot fly → DON'T TAP
-- 🐕 कुत्ता → Cannot fly → DON'T TAP
+* 🐦 चिड़िया
+* 🦜 तोता
+* 🐦‍⬛ कौआ
+* 🦉 उल्लू
+* 🦚 मोर
+* 🐝 मधुमक्खी
+* 🦋 तितली
+* 🪁 पतंग
+* ✈️ हवाई जहाज़
+* 🎈 गुब्बारा
+* ☁️ बादल
+* 🦇 चमगादड़
 
-The challenge becomes harder because the available response time gradually decreases as the player succeeds.
+### 🐘 Non-Flying Objects
+
+* 🐘 हाथी
+* 🐄 गाय
+* 🐐 बकरी
+* 🪑 कुर्सी
+* 🗄️ मेज़
+* 🚲 साइकिल
+* 🚗 कार
+* 🐟 मछली
+* 🐕 कुत्ता
+* 🐈 बिल्ली
+* 📖 किताब
+* ⛰️ पहाड़
+
+The challenge becomes harder as the available response time decreases.
 
 ---
 
 ## ✨ Features
 
-### 🐦 Flying & Non-Flying Challenges
-
-The game contains a collection of flying and non-flying objects.
-
-Flying objects include:
-
-- 🐦 चिड़िया
-- 🦜 तोता
-- 🐦‍⬛ कौआ
-- 🦉 उल्लू
-- 🦚 मोर
-- 🐝 मधुमक्खी
-- 🦋 तितली
-- 🪁 पतंग
-- ✈️ हवाई जहाज़
-- 🎈 गुब्बारा
-- ☁️ बादल
-- 🦇 चमगादड़
-
-Non-flying objects include:
-
-- 🐘 हाथी
-- 🐄 गाय
-- 🐐 बकरी
-- 🪑 कुर्सी
-- 🗄️ मेज़
-- 🚲 साइकिल
-- 🚗 कार
-- 🐟 मछली
-- 🐕 कुत्ता
-- 🐈 बिल्ली
-- 📖 किताब
-- ⛰️ पहाड़
+* 🐦 Flying and non-flying object challenges
+* ⚡ Progressive difficulty
+* ❤️ 3-life system
+* 🔥 Streak-based scoring
+* ⏱️ Dynamic countdown timer
+* 🏆 Persistent high score
+* 💾 Browser `localStorage` support
+* ⌨️ Spacebar keyboard support
+* 🔊 Web Audio API sound effects
+* 🎨 Colorful animated game interface
+* ☁️ Animated sky and clouds
+* 🪁 Interactive kite-inspired game card
+* 📱 Responsive design
+* ♿ Reduced-motion support
+* 🌐 Fully client-side — no backend required
 
 ---
 
 ## ⚡ Increasing Difficulty
 
-The game starts with a limited amount of time for every round.
+The game progressively becomes faster as the player succeeds.
 
-Every correct response makes the game faster.
+### Initial Round Time
 
-The initial round time is:
+```text
+2200 ms
+```
 
-**2200 milliseconds**
+### Minimum Round Time
 
-The minimum round time is:
+```text
+700 ms
+```
 
-**700 milliseconds**
+Every correct response reduces the available reaction time until the minimum limit is reached.
 
-This creates a progressively harder reflex challenge.
+This creates a progressively harder reflex challenge where players must balance:
+
+```text
+Speed + Accuracy + Concentration
+```
 
 ---
 
 ## ❤️ Lives System
 
-The player starts with:
+Each game starts with:
 
-**3 Lives ❤️❤️❤️**
+```text
+❤️ ❤️ ❤️
+```
 
-A wrong answer removes one life.
+The player loses one life after an incorrect response.
 
-Examples:
+### Correct Actions
 
-- Tapping a flying object → ✅ Correct
-- Not tapping a non-flying object → ✅ Correct
-- Tapping a non-flying object → ❌ Wrong
-- Missing a flying object → ❌ Wrong
+```text
+Flying object + TAP
+        ↓
+      Correct
 
-When all lives are lost, the game ends.
+Non-flying object + DON'T TAP
+        ↓
+      Correct
+```
+
+### Incorrect Actions
+
+```text
+Flying object + DON'T TAP
+        ↓
+       Wrong
+
+Non-flying object + TAP
+        ↓
+       Wrong
+```
+
+When all three lives are lost, the game ends and the final score is displayed.
 
 ---
 
@@ -128,124 +151,105 @@ When all lives are lost, the game ends.
 
 Correct answers increase the player's streak.
 
-The scoring system provides points for correct answers and additional bonuses for maintaining a streak.
+The scoring system rewards successful responses and provides additional bonuses for maintaining a streak.
 
-This encourages the player to maintain both:
+The gameplay therefore encourages players to maintain:
 
-- Speed
-- Accuracy
+* ⚡ Fast reactions
+* 🎯 High accuracy
+* 🔥 Long streaks
 
-The goal is to achieve the highest possible score without losing all three lives.
+The objective is to achieve the highest possible score without losing all three lives.
 
 ---
 
 ## ⏱️ Dynamic Timer
 
-Each round has a visual countdown timer.
+Each round includes a visual countdown timer.
 
-The timer gradually decreases while the player is deciding what to do.
+The timer gradually decreases while the player makes a decision.
 
-When the remaining time becomes low, the timer enters a danger state.
+When the remaining time becomes low, the timer enters a visual danger state.
 
 If the timer expires:
 
-- A missed flying object counts as a wrong answer.
-- A non-flying object that was correctly ignored counts as a correct answer.
+* 🐦 A missed flying object counts as incorrect.
+* 🐘 Correctly ignoring a non-flying object counts as correct.
 
 ---
 
 ## ⌨️ Keyboard Support
 
-The game supports keyboard interaction.
+The game supports keyboard interaction for desktop users.
 
-During gameplay:
+### Spacebar
 
-**Spacebar** → performs the same action as pressing the **उड़! 🪁** button.
+```text
+SPACE → Same action as "उड़! 🪁"
+```
 
-This makes the game easy to play on desktop computers and laptops.
+This allows the game to be played without relying entirely on mouse or touch interaction.
 
 ---
 
 ## 🔊 Sound Effects
 
-The game includes lightweight sound effects generated using the browser's Web Audio API.
+Lightweight sound effects are generated using the browser's **Web Audio API**.
 
 No external audio files are required.
 
-Different sounds are used for:
+Different audio feedback is provided for:
 
-- ✅ Correct answers
-- ❌ Wrong answers
+* ✅ Correct responses
+* ❌ Incorrect responses
 
-The audio system is intentionally lightweight and dependency-free.
+The audio implementation remains lightweight and dependency-free.
 
 ---
 
 ## 🏆 High Score
 
-The game saves the player's high score using browser **localStorage**.
+The game uses the browser's **localStorage API** to save the player's high score.
 
-This allows the best score to remain available when the player returns to the game in the same browser.
+This means the best score can remain available when the player returns to the game using the same browser.
 
-A new record notification is displayed when the current score beats the previous high score.
+When a player beats the previous high score, the game displays a new-record notification.
 
 ---
 
 ## 🎨 User Interface
 
-The game uses a colorful dusk-sky inspired visual design.
+The game uses a colorful **dusk-sky inspired interface** designed around the nostalgic playground theme.
 
-The interface includes:
+The UI includes:
 
-- 🌅 Gradient sky background
-- ☀️ Sun
-- ☁️ Animated clouds
-- 🪁 Kite-shaped game card
-- 🎨 Interactive buttons
-- ❤️ Lives indicator
-- 🔥 Streak indicator
-- ⏱️ Countdown timer
-- ✅ Correct feedback
-- ❌ Wrong feedback
-- 🏆 Game result screen
+* 🌅 Gradient sky background
+* ☀️ Sun
+* ☁️ Animated clouds
+* 🪁 Kite-inspired game card
+* 🎨 Interactive controls
+* ❤️ Lives indicator
+* 🔥 Streak indicator
+* ⏱️ Countdown timer
+* ✅ Correct-answer feedback
+* ❌ Wrong-answer feedback
+* 🏆 Game-over/result screen
 
 ---
 
 ## 📱 Responsive Design
 
-The interface is designed to work across different screen sizes.
+The interface adapts to different screen sizes using responsive CSS.
 
-Responsive styling adjusts the game layout for smaller screens, including:
+The layout adjusts:
 
-- Game card size
-- Button size
-- Typography
-- Spacing
+* Game card dimensions
+* Button sizes
+* Typography
+* Spacing
+* Overall game layout
 
-The project also supports the browser's reduced-motion preference.
-
----
-
-## 🛠️ Technologies Used
-
-### Frontend
-
-- HTML5
-- CSS3
-- JavaScript ES6+
-
-### Browser APIs
-
-- LocalStorage API
-- Web Audio API
-- requestAnimationFrame
-- Performance API
-- Keyboard Events
-
-### Fonts
-
-- Baloo 2
-- Poppins
+The application also respects the browser's **`prefers-reduced-motion`** setting for users who prefer less animation.
 
 ---
 
@@ -253,20 +257,22 @@ The project also supports the browser's reduced-motion preference.
 
 The game maintains an internal state containing:
 
-- Current score
-- Number of lives
-- Current streak
-- Current round time
-- Minimum round time
-- Current word
-- Timer state
-- Animation state
-- Answer state
-- Playing state
+```text
+Current Score
+Current Lives
+Current Streak
+Current Round Time
+Minimum Round Time
+Current Object
+Timer State
+Animation State
+Answer State
+Playing State
+```
 
 Each round randomly selects an object from the game's word bank.
 
-Each object contains:
+Objects are represented using a simple JavaScript structure:
 
 ```javascript
 {
@@ -274,3 +280,203 @@ Each object contains:
     emoji: "🐦",
     flies: true
 }
+```
+
+The `flies` property determines whether the player should tap the **उड़! 🪁** button.
+
+---
+
+## 🔄 Game Flow
+
+```text
+Start Game
+    │
+    ▼
+Select Random Object
+    │
+    ▼
+Display Word + Emoji
+    │
+    ▼
+Player Decision
+    │
+    ├───────────────┐
+    │               │
+    ▼               ▼
+   TAP          DON'T TAP
+    │               │
+    └───────┬───────┘
+            ▼
+       Check Answer
+            │
+       ┌────┴────┐
+       │         │
+     Correct    Wrong
+       │         │
+       ▼         ▼
+  Increase      Lose Life
+  Score/Streak     │
+       │            │
+       ▼            ▼
+ Reduce Timer   Check Lives
+       │            │
+       └──────┬─────┘
+              ▼
+        Next Round
+```
+
+---
+
+## 🛠️ Technologies Used
+
+### Frontend
+
+| Technology      | Purpose                             |
+| --------------- | ----------------------------------- |
+| HTML5           | Game structure                      |
+| CSS3            | UI, animation and responsive design |
+| JavaScript ES6+ | Game logic and interactions         |
+
+### Browser APIs
+
+| API                     | Purpose                       |
+| ----------------------- | ----------------------------- |
+| LocalStorage API        | High-score persistence        |
+| Web Audio API           | Sound effects                 |
+| `requestAnimationFrame` | Animation and timer rendering |
+| Performance API         | Timing calculations           |
+| Keyboard Events         | Spacebar controls             |
+
+### Fonts
+
+* Baloo 2
+* Poppins
+
+---
+
+## 📁 Project Structure
+
+```text
+chidiya-udd/
+│
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+```
+
+---
+
+## ▶️ Run Locally
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Shabab991/chidiya-udd.git
+```
+
+### 2. Enter the project directory
+
+```bash
+cd chidiya-udd
+```
+
+### 3. Start a local server
+
+```bash
+python -m http.server 8000
+```
+
+### 4. Open the game
+
+```text
+http://localhost:8000
+```
+
+You can also open `index.html` directly in a modern browser.
+
+---
+
+## 🌐 Deployment
+
+The game is deployed using **GitHub Pages**.
+
+### Live Application
+
+**https://shabab991.github.io/chidiya-udd/**
+
+The entire game runs directly in the browser.
+
+No backend, database, or external server is required for gameplay.
+
+---
+
+## 🎯 Project Objective
+
+The goal of this project was to recreate a familiar Indian playground game as an interactive web experience while implementing:
+
+* Real-time game state management
+* Progressive difficulty
+* Timer-based gameplay
+* Score and streak systems
+* Persistent high scores
+* Keyboard interaction
+* Browser audio
+* Responsive design
+* Client-side game logic
+
+The project combines **nostalgia, interaction design, browser APIs, and JavaScript game development** into a lightweight web application.
+
+---
+
+## 🧠 Concepts Demonstrated
+
+This project demonstrates practical understanding of:
+
+* JavaScript game development
+* State management
+* Event-driven programming
+* Timer management
+* Randomized game elements
+* Score calculation
+* Progressive difficulty systems
+* DOM manipulation
+* Browser storage
+* Web Audio API
+* Keyboard events
+* Animation loops
+* Responsive web design
+* Client-side application development
+
+---
+
+## 🔮 Future Improvements
+
+Potential future enhancements:
+
+* 🏆 Global online leaderboard
+* 👥 Multiplayer mode
+* 🎚️ Difficulty selection
+* 📊 Detailed game statistics
+* 🌍 More Indian playground games
+* 🎵 Background music
+* 🎨 Additional themes
+* 📱 Progressive Web App support
+* 🥇 Achievement system
+* 📈 Reaction-time analytics
+
+---
+
+## 👨‍💻 Developer
+
+**Shabab Ahmad**
+
+MCA Student | Aspiring Data Engineer | Data Analytics | ML/AI
+
+GitHub: **https://github.com/Shabab991**
+
+---
+
+## ⭐ Support
+
+If you enjoyed playing **Chidiya Udd**, consider giving the repository a ⭐ on GitHub.
